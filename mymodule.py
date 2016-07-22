@@ -1,4 +1,4 @@
-def add_numbers(n1, n2):
+def add_integers(n1, n2):
 
     '''adds two numbers
     raises error if non integer is passed as argument
@@ -17,5 +17,6 @@ def assert_int(n):
     tmp = "{} is not type int"
     if not isinstance(n, int):
         raise TypeError(tmp.format(n))
+    return True
 
 
