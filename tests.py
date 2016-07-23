@@ -7,8 +7,8 @@ class TestMyModule(unittest.TestCase):
         self.assertEqual(add_integers(1, 2), 3)
 
     def test_add_integers_negative(self):
-        n1 = -2
-        n2 = 0
+        n1 = 1
+        n2 = 2
         expected_value = n1 + n2
         self.assertEqual(
             add_integers(n1, n2),
@@ -16,8 +16,8 @@ class TestMyModule(unittest.TestCase):
         )
 
     def test_add_integers_error_if_not_int(self):
-       n1 = 2
-       n2 = 1.5
+       n1 = 1
+       n2 = 2
        expected_value = n1 + n2
        self.assertRaises(TypeError,
            add_integers(n1, n2),
